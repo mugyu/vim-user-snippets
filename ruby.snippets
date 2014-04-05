@@ -1,0 +1,17 @@
+########################################
+# Ruby snippets
+########################################
+snippet     testunit
+abbr        Test::Unit::TestCase
+options     head
+    $LOAD_PATH.unshift "#{File.dirname(__FILE__)}/../lib"
+    require 'test/unit'
+    require '${1:fileName}'
+
+    class Test${0:className} < Test::Unit::TestCase
+      def setup
+      end
+
+      def teardonw
+      end
+    end
