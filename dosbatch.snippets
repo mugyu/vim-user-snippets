@@ -1,0 +1,54 @@
+########################################
+# DOS Batch File
+########################################
+snippet     ruby
+abbr        Shebang
+options     head
+    @ruby -x "%~f0" %* & exit /b
+    #!ruby
+    
+    ${1}
+    
+    # vim: ft=ruby
+
+snippet     perl
+abbr        Shebang
+options     head
+    @perl -x "%~f0" %* & exit /b
+    #!perl
+    
+    ${1}
+    
+    # vim: ft=perl
+
+snippet     lua
+abbr        Shebang
+options     head
+    ::rem:: --[[
+    @luajit "%~f0" %1 %2 %3 %4 %5 %6 %7 %8 %9 & exit /b
+    ]]--
+    
+    ${1}
+    
+    -- vim: ft=lua
+
+snippet     gosh
+abbr        Shebang
+options     head
+    ;@gosh "%~f0" %* & exit /b
+    
+    ${1}
+    
+    ;; vim: ft=scheme
+
+snippet     jscript
+abbr        Shebang
+options     head
+    @if(0)==(0) ECHO OFF
+    CScript.exe //NoLogo //E:JScript "%~f0" %*
+    GOTO :EOF
+    @end
+    
+    ${1}
+    
+    // vim: ft=javascript
