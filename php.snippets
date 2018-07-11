@@ -1,5 +1,21 @@
 # vim:foldmethod=marker:
 
+# for fuelphp
+#{{{
+snippet logd
+abbr fuelphpのログ出力
+    \Log::debug(var_export(${1:string}, TRUE))${2};
+snippet debug
+abbr fuelphpのデバッグ出力
+    \Debug::dump(${1:string})${2};
+snippet lastquery
+abbr fuelphpのSQLラストクエリ
+    \DB::last_query('${1:database}')${2};
+snippet config
+abbr fuelphpのコンフィグクラス
+    \Config::get('${1:string}')${2};
+#}}}
+
 # == https://gist.github.com/channeleaton/864821 ==
 # SnipMate is required to use snippets
 # Download SnipMate: http://www.vim.org/scripts/script.php?script_id=2540
