@@ -4,16 +4,16 @@
 #{{{
 snippet logd
 abbr fuelphpのログ出力
-    \Log::debug(var_export(${1:string}, TRUE))${2};
+    \Log::debug(var_export(${1:string}, TRUE));
 snippet debug
 abbr fuelphpのデバッグ出力
-    \Debug::dump(${1:string})${2};
+    \Debug::dump(${1:string});
 snippet lastquery
 abbr fuelphpのSQLラストクエリ
-    \DB::last_query('${1:database}')${2};
+    \DB::last_query('${1:database}');
 snippet config
 abbr fuelphpのコンフィグクラス
-    \Config::get('${1:string}')${2};
+    \Config::get('${1:string}');
 #}}}
 
 # == https://gist.github.com/channeleaton/864821 ==
